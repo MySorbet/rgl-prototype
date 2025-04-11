@@ -1,0 +1,21 @@
+.react-grid-item.react-draggable-dragging {
+
+    /* would like to do the following but cant apply this directly to this item. Maybe to children? */
+    /* lift up with shadow, scale, and rotate */
+    /* For now we can just add a shadow */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.react-grid-item {
+    /* Slow animations down a little */
+    transition-duration: 400ms;
+
+    /* Rip curve from bento, though this has a strange effect when widgets are moving over a large distance. */
+    /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+/* Inconsequential styles  */
+.react-grid-item.react-grid-placeholder {
+    background-color: #f6339a;
+    border-radius: 12px;
+}
